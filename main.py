@@ -1,3 +1,7 @@
+from src.ui import exibir_cabecalho
+
+exibir_cabecalho()
+
 from src.telemetria import gerar_telemetria
 from src.alertas import verificar_alertas
 
