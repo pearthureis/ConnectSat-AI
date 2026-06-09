@@ -26,8 +26,12 @@ while True:
         else:
             print("Nenhum alerta encontrado.")
 
-        print("\n=== ANÁLISE ===")
-        print(analisar_missao(dados, alertas))
+        print("\n🤖 Gerando análise da IA... Aguarde alguns segundos.")
+
+        analise = analisar_missao(dados, alertas)
+
+        print("\n===== ANÁLISE DA IA =====")
+        print(analise)
 
         input("\nPressione Enter para voltar ao menu...")
 
@@ -36,4 +40,5 @@ while True:
         break
 
     else:
-        print("Opção inválida!")
+        print("Opção inválida.")
+        input("\nPressione Enter para continuar...")
