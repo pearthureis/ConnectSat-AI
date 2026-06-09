@@ -20,3 +20,8 @@ if alertas:
         print(alerta)
 else:
     print("Nenhum problema detectado.")
+
+from src.engine import analisar_missao
+
+print("\n===== ANÁLISE DA IA =====")
+print(analisar_missao(dados, alertas))
